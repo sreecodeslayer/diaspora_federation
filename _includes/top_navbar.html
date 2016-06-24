@@ -14,6 +14,18 @@
 
       <ul class="visible-xs nav navbar-nav navbar-right">
         <li class="{% include active_class.html url="/" %}"><a href="{{ site.baseurl }}/index.html">Overview</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Discovery <span class="caret"></span></a>
+          {% include discovery_tree.html ulclasses="dropdown-menu" %}
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Federation <span class="caret"></span></a>
+          {% include federation_tree.html ulclasses="dropdown-menu" %}
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Entities <span class="caret"></span></a>
+          {% include entity_tree.html ulclasses="dropdown-menu" %}
+        </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">

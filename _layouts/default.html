@@ -31,6 +31,15 @@
             <ul class="nav nav-pills nav-stacked">
               <li class="{% include active_class.html url="/" %}"><a href="{{ site.baseurl }}/index.html">Overview</a></li>
             </ul>
+
+            <h4 class="nav-header">Discovery</h4>
+            {% include discovery_tree.html %}
+
+            <h4 class="nav-header">Federation</h4>
+            {% include federation_tree.html %}
+
+            <h4 class="nav-header">Entities</h4>
+            {% include entity_tree.html %}
           </nav>
         </div>
         <div class="col-sm-9 docbody">

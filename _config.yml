@@ -10,6 +10,10 @@ sass:
   style: nested
   deploy_style: nested
 
+collections:
+  entities:
+    output: true
+
 kramdown:
   toc_levels: 2..2
 
