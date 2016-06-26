@@ -90,10 +90,10 @@ profile must be ignored.
 
 The WebFinger response must contain the following link relations:
 
-| Link Relation                         | Type | Description                    |
-| ------------------------------------- | ---- | ------------------------------ |
-| http://microformats.org/profile/hcard | url  | The URL to the person's hCard  |
-| http://joindiaspora.com/seed_location | url  | The URL to the person's server |
+| Link Relation                         | Type | Description                            |
+| ------------------------------------- | ---- | -------------------------------------- |
+| http://microformats.org/profile/hcard | url  | The URL to the person's [hCard][hcard] |
+| http://joindiaspora.com/seed_location | url  | The URL to the person's server         |
 
 The WebFinger response may contain other optional link relations.
 
@@ -122,3 +122,4 @@ Content-Type: application/xrd+xml; charset=utf-8
 [webfinger-draft]: https://tools.ietf.org/html/draft-jones-appsawg-webfinger-06
 [webfinger-rfc]: https://tools.ietf.org/html/rfc7033
 [xrd]: http://docs.oasis-open.org/xri/xrd/v1.0/xrd-1.0.html
+[hcard]: {{ site.baseurl }}/discovery/hcard.html
