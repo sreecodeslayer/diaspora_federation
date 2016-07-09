@@ -20,7 +20,7 @@ GET /fetch/:type/:guid
 | Name   | Description                                      |
 | ------ | ------------------------------------------------ |
 | `type` | The type of the entity to fetch in `snake_case`. |
-| `guid` | The GUID of the entity to fetch.                 |
+| `guid` | The [GUID][guid] of the entity to fetch.         |
 
 #### Example
 
@@ -60,3 +60,4 @@ Content-Type: application/magic-envelope+xml; charset=utf-8
 * [Magic Signatures][magicsig]
 
 [magicsig]: {{ site.baseurl }}/federation/magicsig.html
+[guid]: {{ site.baseurl }}/federation/types.html#guid

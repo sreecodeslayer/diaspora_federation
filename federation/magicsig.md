@@ -17,7 +17,7 @@ This is only a summary of the important parts. See the [Magic Signatures Specifi
 | `encoding`  | The encoding of the `data`. This must be `base64url`.                         |
 | `alg`       | The algorithm used for the signature. This must be `RSA-SHA256`.              |
 | `sig`       | The base64url encoded [signature](#signature).                                |
-| `key_id`    | The base64url encoded diaspora\* ID of the signer.                            |
+| `key_id`    | The base64url encoded [diaspora\* ID][diaspora-id] of the signer.             |
 
 ### Signature
 
@@ -54,3 +54,4 @@ The Magic Envelope must be XML serialized.
 
 [draft-salmon]: https://cdn.rawgit.com/salmon-protocol/salmon-protocol/master/draft-panzer-salmon-00.html
 [draft-magicsig]: https://cdn.rawgit.com/salmon-protocol/salmon-protocol/master/draft-panzer-magicsig-01.html
+[diaspora-id]: {{ site.baseurl }}/federation/types.html#diaspora-id

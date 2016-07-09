@@ -26,17 +26,17 @@ the document.
 
 The hCard response must contain the following properties:
 
-| CSS selector                       | Type    | Description                                                                                                                                                            |
-| ---------------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `.uid`                             | guid    | The GUID of the person.                                                                                                                                                |
-| `.fn`                              | string  | The full name of the person.                                                                                                                                           |
-| `.given_name`                      | string  | The first name of the person.                                                                                                                                          |
-| `.family_name`                     | string  | The last name of the person.                                                                                                                                           |
-| `.key`                             | string  | The public key of the person. The format is a DER-encoded PKCS\#1 key beginning with the text `-----BEGIN PUBLIC KEY-----` and ending with `-----END PUBLIC KEY-----`. |
-| `.entity_photo .photo[src]`        | url     | The URL to the big avatar (300x300) of the person.                                                                                                                     |
-| `.entity_photo_medium .photo[src]` | url     | The URL to the medium avatar (100x100) of the person.                                                                                                                  |
-| `.entity_photo_small .photo[src]`  | url     | The URL to the small avatar (50x50) of the person.                                                                                                                     |
-| `.searchable`                      | boolean | The flag if the person is searchable by name.                                                                                                                          |
+| CSS selector                       | Type (Length)            | Description                                                                                                                                                            |
+| ---------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `.uid`                             | [GUID][guid]             | The GUID of the person.                                                                                                                                                |
+| `.fn`                              | [Name][name] (70)        | The full name of the person.                                                                                                                                           |
+| `.given_name`                      | [Name][name] (32)        | The first name of the person.                                                                                                                                          |
+| `.family_name`                     | [Name][name] (32)        | The last name of the person.                                                                                                                                           |
+| `.key`                             | [String][string] (65535) | The public key of the person. The format is a DER-encoded PKCS\#1 key beginning with the text `-----BEGIN PUBLIC KEY-----` and ending with `-----END PUBLIC KEY-----`. |
+| `.entity_photo .photo[src]`        | [URL][url] (255)         | The URL to the big avatar (300x300) of the person.                                                                                                                     |
+| `.entity_photo_medium .photo[src]` | [URL][url] (255)         | The URL to the medium avatar (100x100) of the person.                                                                                                                  |
+| `.entity_photo_small .photo[src]`  | [URL][url] (255)         | The URL to the small avatar (50x50) of the person.                                                                                                                     |
+| `.searchable`                      | [Boolean][boolean]       | The flag if the person is searchable by name.                                                                                                                          |
 
 #### Example
 
@@ -137,3 +137,8 @@ OFxcL+/diwyswWkVbeaNCrrdfz8LTDQcWv8GA6olBOx7RlgVb7k3HonHaQjaI+xv
 
 [hcard]: http://microformats.org/wiki/hCard
 [webfinger]: {{ site.baseurl }}/discovery/webfinger.html
+[guid]: {{ site.baseurl }}/federation/types.html#guid
+[name]: {{ site.baseurl }}/federation/types.html#name
+[string]: {{ site.baseurl }}/federation/types.html#string
+[url]: {{ site.baseurl }}/federation/types.html#url
+[boolean]: {{ site.baseurl }}/federation/types.html#boolean

@@ -47,9 +47,9 @@ The receiving pod should respond with a `200 OK` or `202 Accepted` status-code.
 POST /receive/users/:guid
 ~~~
 
-| Name   | Description                       |
-| ------ | --------------------------------- |
-| `guid` | The GUID of the recipient person. |
+| Name   | Description                               |
+| ------ | ----------------------------------------- |
+| `guid` | The [GUID][guid] of the recipient person. |
 
 ### Example
 
@@ -80,3 +80,4 @@ Status: 202 Accepted
 
 [magicsig]: {{ site.baseurl }}/federation/magicsig.html#magic-envelope
 [encrypted-magicsig]: {{ site.baseurl }}/federation/encryption.html#encrypted-magic-envelope
+[guid]: {{ site.baseurl }}/federation/types.html#guid

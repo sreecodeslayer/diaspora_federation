@@ -6,19 +6,29 @@ This entity represents a reshare of a status message.
 
 ## Properties
 
-| Property     | Type          | Description                                            |
-| ------------ | ------------- | ------------------------------------------------------ |
-| `author`     | diaspora\* ID | The diaspora\* ID of the author of the status message. |
-| `guid`       | guid          | The GUID of the status message.                        |
-| `created_at` | timestamp     | The create timestamp of the status message.            |
-| `public`     | boolean       | `true` if the status message is public.                |
-| `text`       | string        | The status message text, maximum of 65535 characters.  |
+| Property     | Type (Length)                | Description                                            |
+| ------------ | ---------------------------- | ------------------------------------------------------ |
+| `author`     | [diaspora\* ID][diaspora-id] | The diaspora\* ID of the author of the status message. |
+| `guid`       | [GUID][guid]                 | The GUID of the status message.                        |
+| `created_at` | [Timestamp][timestamp]       | The create timestamp of the status message.            |
+| `public`     | [Boolean][boolean]           | `true` if the status message is public.                |
+| `text`       | [Markdown][markdown] (65535) | The status message text.                               |
 
 ## Optional Properties
 
-| Property                | Type     | Description                                                                                                             |
-| ----------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `provider_display_name` | string   | The means by which the author has posted the status message, maximum of 255 characters.                                 |
-| `location`              | Location | The Location information of the status message.                                                                         |
-| `photo`                 | Photos   | The attached Photos of the status message, the `status_message_guid` and the `author` need to match the status message. |
-| `poll`                  | Poll     | The attached Poll of the status message.                                                                                |
+| Property                | Type (Length)          | Description                                                                                                             |
+| ----------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `provider_display_name` | [String][string] (255) | The means by which the author has posted the status message.                                                            |
+| `location`              | [Location][location]   | The Location information of the status message.                                                                         |
+| `photo`                 | [Photo][photo]s        | The attached Photos of the status message, the `status_message_guid` and the `author` need to match the status message. |
+| `poll`                  | [Poll][poll]           | The attached Poll of the status message.                                                                                |
+
+[diaspora-id]: {{ site.baseurl }}/federation/types.html#diaspora-id
+[guid]: {{ site.baseurl }}/federation/types.html#guid
+[timestamp]: {{ site.baseurl }}/federation/types.html#timestamp
+[boolean]: {{ site.baseurl }}/federation/types.html#boolean
+[markdown]: {{ site.baseurl }}/federation/types.html#markdown
+[string]: {{ site.baseurl }}/federation/types.html#string
+[location]: {{ site.baseurl }}/entities/location.html
+[photo]: {{ site.baseurl }}/entities/photo.html
+[poll]: {{ site.baseurl }}/entities/poll.html
