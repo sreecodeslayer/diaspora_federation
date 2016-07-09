@@ -2,7 +2,9 @@
 title: Participation
 ---
 
-A participation is sent to subscribe a person on updates for some post.
+A participation is sent to subscribe a person on updates for some [Post][post].
+
+The `parent_type` can only be a [Post][post] ([StatusMessage][status_message] or [Reshare][reshare])
 
 ## Properties
 
@@ -16,3 +18,6 @@ A participation is sent to subscribe a person on updates for some post.
 [diaspora-id]: {{ site.baseurl }}/federation/types.html#diaspora-id
 [guid]: {{ site.baseurl }}/federation/types.html#guid
 [type]: {{ site.baseurl }}/federation/types.html#type
+[post]: {{ site.baseurl }}/entities/post.html
+[status_message]: {{ site.baseurl }}/entities/status_message.html
+[reshare]: {{ site.baseurl }}/entities/reshare.html

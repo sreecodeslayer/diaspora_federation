@@ -2,7 +2,7 @@
 title: Comment
 ---
 
-This entity represents a comment to some kind of post (e.g. status message).
+This entity represents a comment to some kind of [Post][post] ([StatusMessage][status_message] or [Reshare][reshare]).
 
 ## Properties
 
@@ -21,3 +21,6 @@ This entity represents a comment to some kind of post (e.g. status message).
 [markdown]: {{ site.baseurl }}/federation/types.html#markdown
 [timestamp]: {{ site.baseurl }}/federation/types.html#timestamp
 [signature]: {{ site.baseurl }}/federation/types.html#signature
+[post]: {{ site.baseurl }}/entities/post.html
+[status_message]: {{ site.baseurl }}/entities/status_message.html
+[reshare]: {{ site.baseurl }}/entities/reshare.html

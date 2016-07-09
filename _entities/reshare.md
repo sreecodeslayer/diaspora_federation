@@ -2,17 +2,17 @@
 title: Reshare
 ---
 
-This entity represents a reshare of a [StatusMessage][status_message].
+This entity represents a reshare of a [StatusMessage][status_message]. It inherits from [Post][post].
 
 ## Properties
 
-| Property      | Type                         | Description                                           |
-| ------------- | ---------------------------- | ----------------------------------------------------- |
-| `author`      | [diaspora\* ID][diaspora-id] | The diaspora\* ID of the author of the reshare.       |
-| `guid`        | [GUID][guid]                 | The GUID of the reshare.                              |
-| `created_at`  | [Timestamp][timestamp]       | The create timestamp of the reshare.                  |
-| `root_author` | [diaspora\* ID][diaspora-id] | The diaspora\* ID of the author of the reshared post. |
-| `root_guid`   | [GUID][guid]                 | The GUID of the reshared post.                        |
+| Property      | Type                         | Description                                                   |
+| ------------- | ---------------------------- | ------------------------------------------------------------- |
+| `author`      | [diaspora\* ID][diaspora-id] | The diaspora\* ID of the author of the reshare.               |
+| `guid`        | [GUID][guid]                 | The GUID of the reshare.                                      |
+| `created_at`  | [Timestamp][timestamp]       | The create timestamp of the reshare.                          |
+| `root_author` | [diaspora\* ID][diaspora-id] | The diaspora\* ID of the author of the reshared [Post][post]. |
+| `root_guid`   | [GUID][guid]                 | The GUID of the reshared [Post][post].                        |
 
 ## Optional Properties
 
@@ -26,4 +26,5 @@ This entity represents a reshare of a [StatusMessage][status_message].
 [timestamp]: {{ site.baseurl }}/federation/types.html#timestamp
 [string]: {{ site.baseurl }}/federation/types.html#string
 [boolean]: {{ site.baseurl }}/federation/types.html#boolean
+[post]: {{ site.baseurl }}/entities/post.html
 [status_message]: {{ site.baseurl }}/entities/status_message.html

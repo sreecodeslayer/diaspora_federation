@@ -2,7 +2,7 @@
 title: StatusMessage
 ---
 
-This entity represents a reshare of a status message.
+This entity represents a reshare of a status message. It inherits from [Post][post].
 
 ## Properties
 
@@ -29,6 +29,7 @@ This entity represents a reshare of a status message.
 [boolean]: {{ site.baseurl }}/federation/types.html#boolean
 [markdown]: {{ site.baseurl }}/federation/types.html#markdown
 [string]: {{ site.baseurl }}/federation/types.html#string
+[post]: {{ site.baseurl }}/entities/post.html
 [location]: {{ site.baseurl }}/entities/location.html
 [photo]: {{ site.baseurl }}/entities/photo.html
 [poll]: {{ site.baseurl }}/entities/poll.html
