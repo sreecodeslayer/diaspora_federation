@@ -9,6 +9,8 @@ The `parent_type` can be one of:
 * [Post][post] ([StatusMessage][status_message] or [Reshare][reshare])
 * [Comment][comment] (diaspora\* doesn't support this at the moment)
 
+See also: [Relayable][relayable]
+
 ## Properties
 
 | Property                  | Type                         | Description                                         |
@@ -30,3 +32,4 @@ The `parent_type` can be one of:
 [status_message]: {{ site.baseurl }}/entities/status_message.html
 [reshare]: {{ site.baseurl }}/entities/reshare.html
 [comment]: {{ site.baseurl }}/entities/comment.html
+[relayable]: {{ site.baseurl }}/federation/relayable.html

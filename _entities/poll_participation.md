@@ -4,6 +4,8 @@ title: PollParticipation
 
 This entity represents a participation in a [Poll][poll].
 
+See also: [Relayable][relayable]
+
 ## Properties
 
 | Property                  | Type                         | Description                                                |
@@ -20,3 +22,4 @@ This entity represents a participation in a [Poll][poll].
 [signature]: {{ site.baseurl }}/federation/types.html#signature
 [poll]: {{ site.baseurl }}/entities/poll.html
 [poll_answer]: {{ site.baseurl }}/entities/poll_answer.html
+[relayable]: {{ site.baseurl }}/federation/relayable.html
