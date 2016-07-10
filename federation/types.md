@@ -2,7 +2,8 @@
 title: Value types and formats
 ---
 
-This page describes which types are used for values of the federation entities, and in which format they need to be.
+This page describes which types are used for values of the [federation entities][entities], and in which format they
+need to be.
 
 * TOC
 {:toc}
@@ -94,5 +95,6 @@ Example:
 07b1OIY6sTUQwV5pbpgFK0uz6W4cu+oQnlg410Q4uISUOdNOlBdYqhZJm62VFhgvzt4TZXfiJgoupFkRjP0BsaVaZuP2zKMNvO3ngWOeJRf2oRK4Ub5cEA/g7yijkRc+7y8r1iLJ31MFb1czyeCsLxw9Ol8SvAJddogGiLHDhjE=
 ```
 
+[entities]: {{ site.baseurl }}/entities/
 [commonmark]: http://spec.commonmark.org/
 [iso8601]: https://www.w3.org/TR/NOTE-datetime

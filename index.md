@@ -14,7 +14,8 @@ supporting this protocol). If you experience any issues, feel free to [get in to
 ## Federation support
 
 This document specifies the future protocol for diaspora. diaspora\* release 0.6.0.0 and newer has support to receive
-entities with this protocol, but still sends entities with an older protocol. Starting with diaspora\* release X this
-protocol is fully supported.
+[entities][entities] with this protocol, but still sends entities with an older protocol. Starting with diaspora\*
+release X this protocol is fully supported.
 
 [communication]: https://wiki.diasporafoundation.org/How_we_communicate
+[entities]: {{ site.baseurl }}/entities/
