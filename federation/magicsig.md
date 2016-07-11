@@ -12,7 +12,7 @@ This is only a summary of the important parts. See the [Magic Signatures Specifi
 
 | Parameter   | Description                                                                   |
 | ----------- | ----------------------------------------------------------------------------- |
-| `data`      | The encoded XML payload.                                                      |
+| `data`      | The [serialized][serialization] [entity][entities], base64url-encoded.        |
 | `data_type` | The MIME-type of the payload before encoding. This must be `application/xml`. |
 | `encoding`  | The encoding of the `data`. This must be `base64url`.                         |
 | `alg`       | The algorithm used for the signature. This must be `RSA-SHA256`.              |
@@ -55,3 +55,5 @@ The Magic Envelope must be XML serialized.
 [draft-salmon]: https://cdn.rawgit.com/salmon-protocol/salmon-protocol/master/draft-panzer-salmon-00.html
 [draft-magicsig]: https://cdn.rawgit.com/salmon-protocol/salmon-protocol/master/draft-panzer-magicsig-01.html
 [diaspora-id]: {{ site.baseurl }}/federation/types.html#diaspora-id
+[entities]: {{ site.baseurl }}/entities/
+[serialization]: {{ site.baseurl }}/federation/xml_serialization.html
