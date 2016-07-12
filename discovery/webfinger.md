@@ -79,7 +79,7 @@ Host: example.org
 The webfinger document must be in the [XRD 1.0 document format][xrd] and should be served with the
 `application/xrd+xml` media type.
 
-If the requested diaspora\* ID is unknown by the server, he must return a 404 status code.
+If the requested diaspora\* ID is unknown by the server, it must return a 404 status code.
 
 #### Subject
 

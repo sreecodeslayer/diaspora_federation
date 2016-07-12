@@ -31,13 +31,13 @@ Host: example.org
 
 ### Response
 
-If the server is the owner of the requested entity, he should respond with the entity, signed with
+If the server is the owner of the requested entity, it should respond with the entity, signed with
 [Magic Signatures][magicsig]. The status-code should be `200 OK`.
 
-If the server is not the owner of the requested entity, but knows the owner, he should redirect to the fetch-url on the
+If the server is not the owner of the requested entity, but knows the owner, it should redirect to the fetch-url on the
 owner server. The status-code should be `301 Moved Permanently` or `302 Found`.
 
-If the server doesn't know the entity, the entity is private or does not support fetching for this type, he should
+If the server doesn't know the entity, the entity is private or does not support fetching for this type, it should
 respond with the status-code `404 Not Found`.
 
 #### Example

@@ -3,7 +3,7 @@ title: Relayable
 ---
 
 If a person participates on an entity, it needs to be relayed via the author of the parent entity, because only the
-parent author knows, to whom he shared the original entity.
+parent author knows, to whom they shared the original entity.
 
 Such entities are:
 
@@ -59,10 +59,10 @@ To support fetching of the relayables, the parent author should save the followi
 The parent author is allowed to retract the entity, so there are no additional signatures required for the
 [Retraction][retraction] (only the [Salmon Magic Signature][magicsig]).
 
-If the author retracts the entity, he sends a [Retraction][retraction] to the parent author. The parent author also
+If the author retracts the entity, they send a [Retraction][retraction] to the parent author. The parent author also
 must relay this retraction to all recipients of the parent entity.
 
-If the parent author wants to reject the entity (e.g. if he ignores the author of the relayable), he can simply send
+If the parent author wants to reject the entity (e.g. if they ignore the author of the relayable), they can simply send
 a [Retraction][retraction] for it back to the author.
 
 
