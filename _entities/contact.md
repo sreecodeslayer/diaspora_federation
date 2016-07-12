@@ -13,5 +13,16 @@ This entity represents a contact state with another person.
 | `following` | [Boolean][boolean]           | `true` if the author is following the recipient.    |
 | `sharing`   | [Boolean][boolean]           | `true` if the author is sharing with the recipient. |
 
+## Example
+
+~~~xml
+<contact>
+  <author>alice@example.org</author>
+  <recipient>bob@example.com</recipient>
+  <following>true</following>
+  <sharing>true</sharing>
+</contact>
+~~~
+
 [diaspora-id]: {{ site.baseurl }}/federation/types.html#diaspora-id
 [boolean]: {{ site.baseurl }}/federation/types.html#boolean

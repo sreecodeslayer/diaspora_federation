@@ -15,6 +15,18 @@ This entity represents a private message exchanged in private conversation. It c
 | `text`              | [Markdown][markdown] (65535) | The message text.                               |
 | `created_at`        | [Timestamp][timestamp]       | The create timestamp of the message.            |
 
+## Example
+
+~~~xml
+<message>
+  <author>alice@example.org</author>
+  <guid>5cc5692029eb013487753131731751e9</guid>
+  <conversation_guid>9b1376a029eb013487753131731751e9</conversation_guid>
+  <text>this is a very informative text</text>
+  <created_at>2016-07-11T23:17:48Z</created_at>
+</message>
+~~~
+
 [diaspora-id]: {{ site.baseurl }}/federation/types.html#diaspora-id
 [guid]: {{ site.baseurl }}/federation/types.html#guid
 [markdown]: {{ site.baseurl }}/federation/types.html#markdown

@@ -27,6 +27,26 @@ This entity contains all the profile data of a person.
 | `nsfw`             | [Boolean][boolean]           | `true` if all posts of this person should be marked as NSFW.                                             |
 | `tag_string`       | [String][string]             | A list of hashtags for this person, each tag beginning with `#` and seperated by spaces, at most 5 tags. |
 
+## Example
+
+~~~xml
+<profile>
+  <author>alice@example.org</author>
+  <first_name>Alice</first_name>
+  <last_name>Smith</last_name>
+  <image_url>https://example.org/images/thumb_large_a795f872c93309597345.jpg</image_url>
+  <image_url_medium>https://example.org/images/thumb_medium_a795f872c93309597345.jpg</image_url_medium>
+  <image_url_small>https://example.org/images/thumb_small_a795f872c93309597345.jpg</image_url_small>
+  <birthday>1988-07-15</birthday>
+  <gender>Male</gender>
+  <bio>some text about me</bio>
+  <location>github</location>
+  <searchable>true</searchable>
+  <nsfw>false</nsfw>
+  <tag_string>#i #love #tags</tag_string>
+</profile>
+~~~
+
 [diaspora-id]: {{ site.baseurl }}/federation/types.html#diaspora-id
 [name]: {{ site.baseurl }}/federation/types.html#name
 [url]: {{ site.baseurl }}/federation/types.html#url

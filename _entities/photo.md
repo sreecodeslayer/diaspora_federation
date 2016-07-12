@@ -24,6 +24,22 @@ This entity represents a photo. It can be standalone or nested in a [StatusMessa
 | `text`                | [String][string] (65535) | Description text for the photo.                                                 |
 | `status_message_guid` | [GUID][guid]             | The GUID of the [StatusMessage][status_message] to which the photo is attached. |
 
+## Example
+
+~~~xml
+<photo>
+  <guid>0ae691e029ea013487753131731751e9</guid>
+  <author>alice@example.org</author>
+  <public>true</public>
+  <created_at>2016-07-11T23:06:37Z</created_at>
+  <remote_photo_path>https://example.org/uploads/images/</remote_photo_path>
+  <remote_photo_name>f2a41e9d2db4d9a199c8.jpg</remote_photo_name>
+  <text>what you see here...</text>
+  <height>480</height>
+  <width>800</width>
+</photo>
+~~~
+
 [diaspora-id]: {{ site.baseurl }}/federation/types.html#diaspora-id
 [guid]: {{ site.baseurl }}/federation/types.html#guid
 [boolean]: {{ site.baseurl }}/federation/types.html#boolean
