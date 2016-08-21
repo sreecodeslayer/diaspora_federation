@@ -13,13 +13,13 @@ need to be.
 A network-wide identifier of a person. The diaspora\* ID has the following parts:
 
 * `username`: This is the username of the person on the server. A username can contain:
-  * Letters: `a-z` and `A-Z`
+  * Letters: `a-z`
   * Numbers: `0-9`
   * Special chars: `-`, `_` and `.`
 * `hostname`: The hostname of the server. It can be any valid hostname.
 * `port`: If the server doesn't listen on the default port of https (443) or http (80), the diaspora\* ID also contains the port number.
 
-The diaspora\* ID is at most 255 chars long.
+The diaspora\* ID is at most 255 chars long and it must be lowercase.
 
 Examples: `alice@example.org`, `bob@example.com:3000`
 
